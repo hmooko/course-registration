@@ -21,4 +21,9 @@ public class CourseController {
     public List<CourseResponseDto> getCoursesNoCache() {
         return courseService.getAllCoursesNoCache();
     }
+
+    @GetMapping("/caffeine")
+    public List<CourseResponseDto> getCoursesWithCaffeineCache() {
+        return courseService.getAllCoursesWithCaffeineCache();
+    }
 }
