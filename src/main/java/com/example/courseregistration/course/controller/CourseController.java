@@ -26,4 +26,9 @@ public class CourseController {
     public List<CourseResponseDto> getCoursesWithCaffeineCache() {
         return courseService.getAllCoursesWithCaffeineCache();
     }
+
+    @GetMapping("/redis")
+    public List<CourseResponseDto> getCoursesWithRedisCache() {
+        return courseService.getAllCoursesWithRedisCache();
+    }
 }

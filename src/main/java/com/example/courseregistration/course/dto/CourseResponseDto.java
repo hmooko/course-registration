@@ -1,6 +1,7 @@
 package com.example.courseregistration.course.dto;
 
 import com.example.courseregistration.course.domain.Course;
+import java.io.Serializable;
 
 public record CourseResponseDto(
         Long id,
@@ -9,7 +10,7 @@ public record CourseResponseDto(
         String professor,
         int capacity,
         int enrolledCount
-) {
+) implements Serializable {
 
     public static CourseResponseDto from(Course course) {
         return new CourseResponseDto(
