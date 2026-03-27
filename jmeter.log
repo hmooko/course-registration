@@ -1,0 +1,1035 @@
+2026-03-27 09:21:10,769 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-03-27 09:21:10,783 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties
+2026-03-27 09:21:10,784 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/system.properties
+2026-03-27 09:21:10,784 INFO o.a.j.JMeter: Setting JMeter property: protocol=http
+2026-03-27 09:21:10,784 INFO o.a.j.JMeter: Setting JMeter property: host=localhost
+2026-03-27 09:21:10,784 INFO o.a.j.JMeter: Setting JMeter property: port=8080
+2026-03-27 09:21:10,784 INFO o.a.j.JMeter: Setting JMeter property: apiPath=/api/v1/courses/redis
+2026-03-27 09:21:10,784 INFO o.a.j.JMeter: Setting JMeter property: users=300
+2026-03-27 09:21:10,784 INFO o.a.j.JMeter: Setting JMeter property: rampUp=30
+2026-03-27 09:21:10,784 INFO o.a.j.JMeter: Setting JMeter property: loops=20
+2026-03-27 09:21:10,787 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-03-27 09:21:10,787 INFO o.a.j.JMeter: Version 5.6.3
+2026-03-27 09:21:10,787 INFO o.a.j.JMeter: java.version=21.0.9
+2026-03-27 09:21:10,787 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-03-27 09:21:10,787 INFO o.a.j.JMeter: os.name=Mac OS X
+2026-03-27 09:21:10,787 INFO o.a.j.JMeter: os.arch=aarch64
+2026-03-27 09:21:10,787 INFO o.a.j.JMeter: os.version=26.3
+2026-03-27 09:21:10,788 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-03-27 09:21:10,788 INFO o.a.j.JMeter: java.awt.headless=true
+2026-03-27 09:21:10,788 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-03-27 09:21:10,788 INFO o.a.j.JMeter: Available Processors =8
+2026-03-27 09:21:10,794 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-03-27 09:21:10,794 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-03-27 09:21:10,794 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.6.3/libexec
+2026-03-27 09:21:10,794 INFO o.a.j.JMeter: user.dir  =/Users/koohyunmo/Developer/course-registration
+2026-03-27 09:21:10,794 INFO o.a.j.JMeter: PWD       =/Users/koohyunmo/Developer/course-registration
+2026-03-27 09:21:10,797 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: koohyunmos-MacBook-Air.local FullName: localhost
+2026-03-27 09:21:10,805 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/Users/koohyunmo/Developer/course-registration/performance/results/redis-report'
+2026-03-27 09:21:10,807 INFO o.a.j.s.FileServer: Default base='/Users/koohyunmo/Developer/course-registration'
+2026-03-27 09:21:10,807 INFO o.a.j.s.FileServer: Set new base='/Users/koohyunmo/Developer/course-registration/performance/jmeter'
+2026-03-27 09:21:10,915 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-03-27 09:21:10,946 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-03-27 09:21:10,948 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-03-27 09:21:10,950 INFO o.a.j.s.SaveService: Loading file: performance/jmeter/course-cache-comparison.jmx
+2026-03-27 09:21:10,998 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-03-27 09:21:10,998 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-03-27 09:21:10,998 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-03-27 09:21:10,998 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-03-27 09:21:10,998 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-03-27 09:21:10,998 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-03-27 09:21:11,015 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-03-27 09:21:11,019 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-03-27 09:21:11,019 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: performance/results/redis.jtl
+2026-03-27 09:21:11,019 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/reportgenerator.properties
+2026-03-27 09:21:11,020 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-03-27 09:21:11,022 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-03-27 09:21:11,024 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-03-27 09:21:11,024 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-03-27 09:21:11,024 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-03-27 09:21:11,024 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-03-27 09:21:11,024 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-03-27 09:21:11,024 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-03-27 09:21:11,024 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-03-27 09:21:11,025 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-03-27 09:21:11,028 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-03-27 09:21:11,028 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-03-27 09:21:11,028 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-03-27 09:21:11,028 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-03-27 09:21:11,028 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-03-27 09:21:11,028 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-03-27 09:21:11,029 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-03-27 09:21:11,029 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-03-27 09:21:11,029 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-03-27 09:21:11,029 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-03-27 09:21:11,029 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-03-27 09:21:11,029 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-03-27 09:21:11,029 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-03-27 09:21:11,030 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-03-27 09:21:11,030 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-03-27 09:21:11,030 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-03-27 09:21:11,038 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-03-27 09:21:11,039 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-03-27 09:21:11,039 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-03-27 09:21:11,043 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-03-27 09:21:11,043 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-03-27 09:21:11,085 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2026-03-27 09:21:11,144 INFO o.a.j.JMeter: Running test (1774570871144)
+2026-03-27 09:21:11,155 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Course Read Heavy Load
+2026-03-27 09:21:11,155 INFO o.a.j.e.StandardJMeterEngine: Starting 300 threads for group Course Read Heavy Load.
+2026-03-27 09:21:11,155 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-03-27 09:21:11,156 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=300 ramp-up=30 delayedStart=false
+2026-03-27 09:21:11,160 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-1
+2026-03-27 09:21:11,173 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = koohyunmos-MacBook-Air.local
+2026-03-27 09:21:11,177 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-03-27 09:21:11,178 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-03-27 09:21:11,178 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-03-27 09:21:11,178 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-03-27 09:21:11,178 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-03-27 09:21:11,207 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-03-27 09:21:11,207 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-03-27 09:21:11,263 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-2
+2026-03-27 09:21:11,362 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-3
+2026-03-27 09:21:11,462 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-4
+2026-03-27 09:21:11,560 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-5
+2026-03-27 09:21:11,667 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-6
+2026-03-27 09:21:11,762 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-7
+2026-03-27 09:21:11,860 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-8
+2026-03-27 09:21:11,965 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-9
+2026-03-27 09:21:12,062 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-10
+2026-03-27 09:21:12,160 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-11
+2026-03-27 09:21:12,262 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-12
+2026-03-27 09:21:12,357 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-13
+2026-03-27 09:21:12,461 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-14
+2026-03-27 09:21:12,561 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-15
+2026-03-27 09:21:12,662 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-16
+2026-03-27 09:21:12,761 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-17
+2026-03-27 09:21:12,857 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-18
+2026-03-27 09:21:12,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-19
+2026-03-27 09:21:13,057 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-20
+2026-03-27 09:21:13,162 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-21
+2026-03-27 09:21:13,233 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-1
+2026-03-27 09:21:13,234 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-1
+2026-03-27 09:21:13,243 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-5
+2026-03-27 09:21:13,243 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-5
+2026-03-27 09:21:13,252 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-2
+2026-03-27 09:21:13,252 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-2
+2026-03-27 09:21:13,260 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-22
+2026-03-27 09:21:13,357 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-23
+2026-03-27 09:21:13,365 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-6
+2026-03-27 09:21:13,365 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-4
+2026-03-27 09:21:13,365 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-6
+2026-03-27 09:21:13,366 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-4
+2026-03-27 09:21:13,458 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-24
+2026-03-27 09:21:13,502 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-3
+2026-03-27 09:21:13,502 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-3
+2026-03-27 09:21:13,558 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-25
+2026-03-27 09:21:13,661 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-26
+2026-03-27 09:21:13,718 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-7
+2026-03-27 09:21:13,718 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-7
+2026-03-27 09:21:13,763 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-27
+2026-03-27 09:21:13,861 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-8
+2026-03-27 09:21:13,861 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-8
+2026-03-27 09:21:13,862 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-28
+2026-03-27 09:21:13,962 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-29
+2026-03-27 09:21:14,059 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-13
+2026-03-27 09:21:14,059 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-13
+2026-03-27 09:21:14,060 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-30
+2026-03-27 09:21:14,118 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-10
+2026-03-27 09:21:14,118 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-10
+2026-03-27 09:21:14,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-31
+2026-03-27 09:21:14,262 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-32
+2026-03-27 09:21:14,380 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-33
+2026-03-27 09:21:14,460 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-34
+2026-03-27 09:21:14,540 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-9
+2026-03-27 09:21:14,540 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-9
+2026-03-27 09:21:14,561 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-35
+2026-03-27 09:21:14,581 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-14
+2026-03-27 09:21:14,581 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-14
+2026-03-27 09:21:14,613 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-12
+2026-03-27 09:21:14,613 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-12
+2026-03-27 09:21:14,617 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-11
+2026-03-27 09:21:14,618 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-11
+2026-03-27 09:21:14,662 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-36
+2026-03-27 09:21:14,758 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-37
+2026-03-27 09:21:14,841 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-16
+2026-03-27 09:21:14,841 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-16
+2026-03-27 09:21:14,862 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-38
+2026-03-27 09:21:14,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-39
+2026-03-27 09:21:15,059 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-40
+2026-03-27 09:21:15,146 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-17
+2026-03-27 09:21:15,147 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-17
+2026-03-27 09:21:15,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-41
+2026-03-27 09:21:15,257 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-42
+2026-03-27 09:21:15,349 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-19
+2026-03-27 09:21:15,349 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-19
+2026-03-27 09:21:15,357 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-43
+2026-03-27 09:21:15,395 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-20
+2026-03-27 09:21:15,395 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-20
+2026-03-27 09:21:15,397 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-15
+2026-03-27 09:21:15,397 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-15
+2026-03-27 09:21:15,436 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-18
+2026-03-27 09:21:15,436 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-18
+2026-03-27 09:21:15,462 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-44
+2026-03-27 09:21:15,562 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-45
+2026-03-27 09:21:15,603 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-25
+2026-03-27 09:21:15,604 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-25
+2026-03-27 09:21:15,657 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-21
+2026-03-27 09:21:15,657 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-21
+2026-03-27 09:21:15,659 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-46
+2026-03-27 09:21:15,761 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-47
+2026-03-27 09:21:15,762 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-22
+2026-03-27 09:21:15,762 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-22
+2026-03-27 09:21:15,857 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-48
+2026-03-27 09:21:15,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-49
+2026-03-27 09:21:16,061 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-50
+2026-03-27 09:21:16,108 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-24
+2026-03-27 09:21:16,108 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-24
+2026-03-27 09:21:16,162 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-51
+2026-03-27 09:21:16,261 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-52
+2026-03-27 09:21:16,296 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-23
+2026-03-27 09:21:16,296 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-23
+2026-03-27 09:21:16,358 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-53
+2026-03-27 09:21:16,457 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-54
+2026-03-27 09:21:16,560 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-55
+2026-03-27 09:21:16,658 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-56
+2026-03-27 09:21:16,725 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-29
+2026-03-27 09:21:16,725 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-29
+2026-03-27 09:21:16,733 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-27
+2026-03-27 09:21:16,733 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-27
+2026-03-27 09:21:16,761 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-57
+2026-03-27 09:21:16,859 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-58
+2026-03-27 09:21:16,893 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-28
+2026-03-27 09:21:16,893 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-28
+2026-03-27 09:21:16,956 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-26
+2026-03-27 09:21:16,956 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-26
+2026-03-27 09:21:16,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-59
+2026-03-27 09:21:17,057 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-34
+2026-03-27 09:21:17,057 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-34
+2026-03-27 09:21:17,057 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-60
+2026-03-27 09:21:17,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-61
+2026-03-27 09:21:17,164 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-33
+2026-03-27 09:21:17,164 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-33
+2026-03-27 09:21:17,261 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-62
+2026-03-27 09:21:17,360 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-35
+2026-03-27 09:21:17,361 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-35
+2026-03-27 09:21:17,362 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-63
+2026-03-27 09:21:17,421 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-31
+2026-03-27 09:21:17,421 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-31
+2026-03-27 09:21:17,462 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-64
+2026-03-27 09:21:17,560 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-65
+2026-03-27 09:21:17,613 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-30
+2026-03-27 09:21:17,613 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-30
+2026-03-27 09:21:17,638 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-39
+2026-03-27 09:21:17,638 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-39
+2026-03-27 09:21:17,658 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-66
+2026-03-27 09:21:17,755 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-32
+2026-03-27 09:21:17,756 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-32
+2026-03-27 09:21:17,761 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-67
+2026-03-27 09:21:17,841 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-36
+2026-03-27 09:21:17,841 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-36
+2026-03-27 09:21:17,861 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-68
+2026-03-27 09:21:17,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-69
+2026-03-27 09:21:17,999 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-38
+2026-03-27 09:21:17,999 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-38
+2026-03-27 09:21:18,020 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-37
+2026-03-27 09:21:18,020 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-37
+2026-03-27 09:21:18,060 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-70
+2026-03-27 09:21:18,160 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-71
+2026-03-27 09:21:18,262 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-72
+2026-03-27 09:21:18,362 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-73
+2026-03-27 09:21:18,420 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-44
+2026-03-27 09:21:18,420 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-44
+2026-03-27 09:21:18,432 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-42
+2026-03-27 09:21:18,432 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-42
+2026-03-27 09:21:18,459 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-74
+2026-03-27 09:21:18,517 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-40
+2026-03-27 09:21:18,518 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-40
+2026-03-27 09:21:18,544 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-43
+2026-03-27 09:21:18,545 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-43
+2026-03-27 09:21:18,556 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-75
+2026-03-27 09:21:18,664 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-76
+2026-03-27 09:21:18,764 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-77
+2026-03-27 09:21:18,860 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-78
+2026-03-27 09:21:18,867 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-51
+2026-03-27 09:21:18,867 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-51
+2026-03-27 09:21:18,876 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-45
+2026-03-27 09:21:18,876 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-45
+2026-03-27 09:21:18,955 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-41
+2026-03-27 09:21:18,955 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-41
+2026-03-27 09:21:18,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-79
+2026-03-27 09:21:19,058 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-80
+2026-03-27 09:21:19,158 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-81
+2026-03-27 09:21:19,187 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-46
+2026-03-27 09:21:19,187 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-46
+2026-03-27 09:21:19,260 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-82
+2026-03-27 09:21:19,358 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-83
+2026-03-27 09:21:19,458 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-84
+2026-03-27 09:21:19,549 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-47
+2026-03-27 09:21:19,549 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-47
+2026-03-27 09:21:19,561 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-85
+2026-03-27 09:21:19,633 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-49
+2026-03-27 09:21:19,633 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-49
+2026-03-27 09:21:19,658 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-86
+2026-03-27 09:21:19,763 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-87
+2026-03-27 09:21:19,791 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-50
+2026-03-27 09:21:19,792 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-50
+2026-03-27 09:21:19,815 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-55
+2026-03-27 09:21:19,816 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-55
+2026-03-27 09:21:19,862 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-88
+2026-03-27 09:21:19,957 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-89
+2026-03-27 09:21:19,982 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-54
+2026-03-27 09:21:19,982 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-54
+2026-03-27 09:21:20,061 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-90
+2026-03-27 09:21:20,138 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-56
+2026-03-27 09:21:20,138 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-56
+2026-03-27 09:21:20,160 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-91
+2026-03-27 09:21:20,248 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-52
+2026-03-27 09:21:20,248 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-52
+2026-03-27 09:21:20,263 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-92
+2026-03-27 09:21:20,351 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-53
+2026-03-27 09:21:20,352 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-53
+2026-03-27 09:21:20,361 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-93
+2026-03-27 09:21:20,397 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-57
+2026-03-27 09:21:20,397 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-57
+2026-03-27 09:21:20,397 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-48
+2026-03-27 09:21:20,397 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-48
+2026-03-27 09:21:20,462 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-94
+2026-03-27 09:21:20,562 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-95
+2026-03-27 09:21:20,661 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-96
+2026-03-27 09:21:20,761 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-97
+2026-03-27 09:21:20,802 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-59
+2026-03-27 09:21:20,802 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-59
+2026-03-27 09:21:20,806 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-60
+2026-03-27 09:21:20,806 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-60
+2026-03-27 09:21:20,858 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-98
+2026-03-27 09:21:20,957 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-99
+2026-03-27 09:21:21,054 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-64
+2026-03-27 09:21:21,055 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-64
+2026-03-27 09:21:21,059 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-100
+2026-03-27 09:21:21,158 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-101
+2026-03-27 09:21:21,229 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-65
+2026-03-27 09:21:21,229 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-65
+2026-03-27 09:21:21,258 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-102
+2026-03-27 09:21:21,359 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-103
+2026-03-27 09:21:21,368 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-58
+2026-03-27 09:21:21,368 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-58
+2026-03-27 09:21:21,386 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-62
+2026-03-27 09:21:21,387 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-62
+2026-03-27 09:21:21,433 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-63
+2026-03-27 09:21:21,433 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-63
+2026-03-27 09:21:21,462 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-104
+2026-03-27 09:21:21,480 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-69
+2026-03-27 09:21:21,480 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-69
+2026-03-27 09:21:21,559 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-105
+2026-03-27 09:21:21,584 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-61
+2026-03-27 09:21:21,584 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-61
+2026-03-27 09:21:21,661 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-106
+2026-03-27 09:21:21,757 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-107
+2026-03-27 09:21:21,859 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-108
+2026-03-27 09:21:21,894 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-68
+2026-03-27 09:21:21,894 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-68
+2026-03-27 09:21:21,958 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-109
+2026-03-27 09:21:21,989 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-66
+2026-03-27 09:21:21,989 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-66
+2026-03-27 09:21:22,061 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-110
+2026-03-27 09:21:22,068 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-67
+2026-03-27 09:21:22,068 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-67
+2026-03-27 09:21:22,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-111
+2026-03-27 09:21:22,257 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-112
+2026-03-27 09:21:22,359 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-113
+2026-03-27 09:21:22,406 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-71
+2026-03-27 09:21:22,407 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-71
+2026-03-27 09:21:22,417 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-73
+2026-03-27 09:21:22,417 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-73
+2026-03-27 09:21:22,462 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-114
+2026-03-27 09:21:22,545 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-74
+2026-03-27 09:21:22,545 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-74
+2026-03-27 09:21:22,561 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-115
+2026-03-27 09:21:22,663 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-116
+2026-03-27 09:21:22,699 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-70
+2026-03-27 09:21:22,699 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-70
+2026-03-27 09:21:22,751 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-72
+2026-03-27 09:21:22,751 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-72
+2026-03-27 09:21:22,758 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-117
+2026-03-27 09:21:22,861 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-118
+2026-03-27 09:21:22,916 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-75
+2026-03-27 09:21:22,916 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-75
+2026-03-27 09:21:22,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-119
+2026-03-27 09:21:23,057 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-79
+2026-03-27 09:21:23,057 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-120
+2026-03-27 09:21:23,057 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-79
+2026-03-27 09:21:23,162 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-121
+2026-03-27 09:21:23,173 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-77
+2026-03-27 09:21:23,173 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-77
+2026-03-27 09:21:23,203 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-78
+2026-03-27 09:21:23,203 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-78
+2026-03-27 09:21:23,262 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-122
+2026-03-27 09:21:23,361 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-123
+2026-03-27 09:21:23,417 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-80
+2026-03-27 09:21:23,417 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-80
+2026-03-27 09:21:23,445 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-82
+2026-03-27 09:21:23,445 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-82
+2026-03-27 09:21:23,462 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-124
+2026-03-27 09:21:23,561 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-125
+2026-03-27 09:21:23,590 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-84
+2026-03-27 09:21:23,590 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-84
+2026-03-27 09:21:23,597 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-76
+2026-03-27 09:21:23,597 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-76
+2026-03-27 09:21:23,658 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-126
+2026-03-27 09:21:23,762 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-127
+2026-03-27 09:21:23,793 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-83
+2026-03-27 09:21:23,793 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-83
+2026-03-27 09:21:23,861 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-128
+2026-03-27 09:21:23,959 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-129
+2026-03-27 09:21:24,033 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-85
+2026-03-27 09:21:24,033 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-85
+2026-03-27 09:21:24,061 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-130
+2026-03-27 09:21:24,108 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-81
+2026-03-27 09:21:24,108 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-81
+2026-03-27 09:21:24,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-131
+2026-03-27 09:21:24,183 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-88
+2026-03-27 09:21:24,183 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-88
+2026-03-27 09:21:24,233 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-86
+2026-03-27 09:21:24,233 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-86
+2026-03-27 09:21:24,262 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-132
+2026-03-27 09:21:24,359 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-133
+2026-03-27 09:21:24,411 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-87
+2026-03-27 09:21:24,411 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-87
+2026-03-27 09:21:24,461 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-134
+2026-03-27 09:21:24,559 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-135
+2026-03-27 09:21:24,638 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-94
+2026-03-27 09:21:24,638 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-94
+2026-03-27 09:21:24,655 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-89
+2026-03-27 09:21:24,655 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-89
+2026-03-27 09:21:24,674 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-136
+2026-03-27 09:21:24,746 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-91
+2026-03-27 09:21:24,747 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-91
+2026-03-27 09:21:24,760 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-137
+2026-03-27 09:21:24,861 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-138
+2026-03-27 09:21:24,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-139
+2026-03-27 09:21:25,058 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-97
+2026-03-27 09:21:25,058 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-97
+2026-03-27 09:21:25,059 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-140
+2026-03-27 09:21:25,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-141
+2026-03-27 09:21:25,260 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-142
+2026-03-27 09:21:25,275 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-92
+2026-03-27 09:21:25,275 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-92
+2026-03-27 09:21:25,281 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-96
+2026-03-27 09:21:25,281 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-96
+2026-03-27 09:21:25,361 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-143
+2026-03-27 09:21:25,404 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-98
+2026-03-27 09:21:25,404 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-98
+2026-03-27 09:21:25,459 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-144
+2026-03-27 09:21:25,528 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-93
+2026-03-27 09:21:25,528 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-93
+2026-03-27 09:21:25,531 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-95
+2026-03-27 09:21:25,531 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-95
+2026-03-27 09:21:25,561 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-145
+2026-03-27 09:21:25,661 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-146
+2026-03-27 09:21:25,667 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-99
+2026-03-27 09:21:25,667 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-99
+2026-03-27 09:21:25,678 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-90
+2026-03-27 09:21:25,678 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-90
+2026-03-27 09:21:25,759 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-147
+2026-03-27 09:21:25,857 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-148
+2026-03-27 09:21:25,874 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-100
+2026-03-27 09:21:25,874 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-100
+2026-03-27 09:21:25,901 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-101
+2026-03-27 09:21:25,901 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-101
+2026-03-27 09:21:25,963 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-149
+2026-03-27 09:21:26,060 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-150
+2026-03-27 09:21:26,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-151
+2026-03-27 09:21:26,257 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-152
+2026-03-27 09:21:26,328 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-106
+2026-03-27 09:21:26,328 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-106
+2026-03-27 09:21:26,359 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-153
+2026-03-27 09:21:26,461 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-154
+2026-03-27 09:21:26,558 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-155
+2026-03-27 09:21:26,660 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-156
+2026-03-27 09:21:26,679 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-103
+2026-03-27 09:21:26,679 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-103
+2026-03-27 09:21:26,742 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-102
+2026-03-27 09:21:26,742 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-102
+2026-03-27 09:21:26,757 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-157
+2026-03-27 09:21:26,857 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-158
+2026-03-27 09:21:26,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-159
+2026-03-27 09:21:27,061 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-160
+2026-03-27 09:21:27,129 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-105
+2026-03-27 09:21:27,130 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-105
+2026-03-27 09:21:27,142 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-104
+2026-03-27 09:21:27,142 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-104
+2026-03-27 09:21:27,159 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-161
+2026-03-27 09:21:27,261 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-162
+2026-03-27 09:21:27,269 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-107
+2026-03-27 09:21:27,269 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-107
+2026-03-27 09:21:27,359 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-116
+2026-03-27 09:21:27,359 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-116
+2026-03-27 09:21:27,361 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-163
+2026-03-27 09:21:27,368 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-110
+2026-03-27 09:21:27,368 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-110
+2026-03-27 09:21:27,412 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-114
+2026-03-27 09:21:27,412 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-114
+2026-03-27 09:21:27,462 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-164
+2026-03-27 09:21:27,522 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-109
+2026-03-27 09:21:27,522 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-109
+2026-03-27 09:21:27,561 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-165
+2026-03-27 09:21:27,660 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-111
+2026-03-27 09:21:27,660 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-111
+2026-03-27 09:21:27,661 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-166
+2026-03-27 09:21:27,746 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-113
+2026-03-27 09:21:27,747 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-113
+2026-03-27 09:21:27,762 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-167
+2026-03-27 09:21:27,795 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-108
+2026-03-27 09:21:27,795 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-108
+2026-03-27 09:21:27,862 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-168
+2026-03-27 09:21:27,882 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-115
+2026-03-27 09:21:27,882 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-115
+2026-03-27 09:21:27,903 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-112
+2026-03-27 09:21:27,903 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-112
+2026-03-27 09:21:27,932 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-120
+2026-03-27 09:21:27,932 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-120
+2026-03-27 09:21:27,959 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-169
+2026-03-27 09:21:28,061 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-170
+2026-03-27 09:21:28,066 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-117
+2026-03-27 09:21:28,066 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-117
+2026-03-27 09:21:28,156 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-171
+2026-03-27 09:21:28,256 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-172
+2026-03-27 09:21:28,307 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-119
+2026-03-27 09:21:28,308 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-119
+2026-03-27 09:21:28,361 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-173
+2026-03-27 09:21:28,388 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-124
+2026-03-27 09:21:28,389 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-124
+2026-03-27 09:21:28,453 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-122
+2026-03-27 09:21:28,453 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-122
+2026-03-27 09:21:28,461 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-174
+2026-03-27 09:21:28,561 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-175
+2026-03-27 09:21:28,630 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-118
+2026-03-27 09:21:28,630 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-118
+2026-03-27 09:21:28,661 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-176
+2026-03-27 09:21:28,702 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-121
+2026-03-27 09:21:28,702 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-121
+2026-03-27 09:21:28,761 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-177
+2026-03-27 09:21:28,859 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-178
+2026-03-27 09:21:28,973 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-179
+2026-03-27 09:21:29,012 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-125
+2026-03-27 09:21:29,012 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-125
+2026-03-27 09:21:29,060 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-180
+2026-03-27 09:21:29,162 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-181
+2026-03-27 09:21:29,258 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-182
+2026-03-27 09:21:29,361 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-183
+2026-03-27 09:21:29,465 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-184
+2026-03-27 09:21:29,470 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-126
+2026-03-27 09:21:29,470 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-126
+2026-03-27 09:21:29,470 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-129
+2026-03-27 09:21:29,470 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-129
+2026-03-27 09:21:29,561 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-185
+2026-03-27 09:21:29,612 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-127
+2026-03-27 09:21:29,612 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-127
+2026-03-27 09:21:29,657 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-186
+2026-03-27 09:21:29,763 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-187
+2026-03-27 09:21:29,785 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-123
+2026-03-27 09:21:29,785 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-123
+2026-03-27 09:21:29,794 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-135
+2026-03-27 09:21:29,795 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-135
+2026-03-27 09:21:29,863 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-188
+2026-03-27 09:21:29,942 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-128
+2026-03-27 09:21:29,942 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-128
+2026-03-27 09:21:29,959 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-189
+2026-03-27 09:21:29,993 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-131
+2026-03-27 09:21:29,993 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-131
+2026-03-27 09:21:30,009 INFO o.a.j.r.Summariser: summary +   3159 in 00:00:19 =  167.5/s Avg:   214 Min:    21 Max:   597 Err:     0 (0.00%) Active: 58 Started: 189 Finished: 131
+2026-03-27 09:21:30,019 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-132
+2026-03-27 09:21:30,019 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-132
+2026-03-27 09:21:30,057 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-190
+2026-03-27 09:21:30,158 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-191
+2026-03-27 09:21:30,260 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-192
+2026-03-27 09:21:30,361 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-193
+2026-03-27 09:21:30,462 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-194
+2026-03-27 09:21:30,463 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-130
+2026-03-27 09:21:30,463 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-130
+2026-03-27 09:21:30,469 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-134
+2026-03-27 09:21:30,469 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-134
+2026-03-27 09:21:30,559 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-195
+2026-03-27 09:21:30,658 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-196
+2026-03-27 09:21:30,696 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-138
+2026-03-27 09:21:30,696 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-138
+2026-03-27 09:21:30,760 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-197
+2026-03-27 09:21:30,794 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-140
+2026-03-27 09:21:30,794 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-140
+2026-03-27 09:21:30,861 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-198
+2026-03-27 09:21:30,874 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-141
+2026-03-27 09:21:30,875 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-141
+2026-03-27 09:21:30,901 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-137
+2026-03-27 09:21:30,901 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-137
+2026-03-27 09:21:30,962 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-199
+2026-03-27 09:21:31,029 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-133
+2026-03-27 09:21:31,029 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-133
+2026-03-27 09:21:31,061 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-200
+2026-03-27 09:21:31,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-201
+2026-03-27 09:21:31,180 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-143
+2026-03-27 09:21:31,180 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-143
+2026-03-27 09:21:31,261 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-202
+2026-03-27 09:21:31,283 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-151
+2026-03-27 09:21:31,283 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-151
+2026-03-27 09:21:31,294 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-139
+2026-03-27 09:21:31,295 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-139
+2026-03-27 09:21:31,361 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-203
+2026-03-27 09:21:31,461 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-204
+2026-03-27 09:21:31,521 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-142
+2026-03-27 09:21:31,521 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-142
+2026-03-27 09:21:31,535 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-136
+2026-03-27 09:21:31,535 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-136
+2026-03-27 09:21:31,561 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-205
+2026-03-27 09:21:31,580 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-147
+2026-03-27 09:21:31,580 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-147
+2026-03-27 09:21:31,661 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-206
+2026-03-27 09:21:31,760 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-207
+2026-03-27 09:21:31,799 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-144
+2026-03-27 09:21:31,799 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-144
+2026-03-27 09:21:31,860 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-208
+2026-03-27 09:21:31,960 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-209
+2026-03-27 09:21:32,058 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-210
+2026-03-27 09:21:32,074 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-150
+2026-03-27 09:21:32,074 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-150
+2026-03-27 09:21:32,075 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-145
+2026-03-27 09:21:32,075 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-145
+2026-03-27 09:21:32,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-211
+2026-03-27 09:21:32,257 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-212
+2026-03-27 09:21:32,356 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-152
+2026-03-27 09:21:32,356 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-152
+2026-03-27 09:21:32,356 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-213
+2026-03-27 09:21:32,461 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-214
+2026-03-27 09:21:32,520 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-146
+2026-03-27 09:21:32,520 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-146
+2026-03-27 09:21:32,540 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-154
+2026-03-27 09:21:32,540 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-154
+2026-03-27 09:21:32,548 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-159
+2026-03-27 09:21:32,548 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-159
+2026-03-27 09:21:32,560 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-149
+2026-03-27 09:21:32,560 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-149
+2026-03-27 09:21:32,560 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-215
+2026-03-27 09:21:32,662 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-216
+2026-03-27 09:21:32,662 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-148
+2026-03-27 09:21:32,662 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-148
+2026-03-27 09:21:32,676 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-161
+2026-03-27 09:21:32,676 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-161
+2026-03-27 09:21:32,761 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-217
+2026-03-27 09:21:32,785 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-156
+2026-03-27 09:21:32,785 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-156
+2026-03-27 09:21:32,819 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-158
+2026-03-27 09:21:32,819 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-158
+2026-03-27 09:21:32,844 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-155
+2026-03-27 09:21:32,844 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-155
+2026-03-27 09:21:32,857 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-218
+2026-03-27 09:21:32,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-219
+2026-03-27 09:21:33,008 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-153
+2026-03-27 09:21:33,008 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-153
+2026-03-27 09:21:33,019 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-157
+2026-03-27 09:21:33,019 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-157
+2026-03-27 09:21:33,061 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-220
+2026-03-27 09:21:33,157 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-221
+2026-03-27 09:21:33,261 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-222
+2026-03-27 09:21:33,357 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-223
+2026-03-27 09:21:33,461 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-224
+2026-03-27 09:21:33,507 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-163
+2026-03-27 09:21:33,507 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-163
+2026-03-27 09:21:33,556 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-225
+2026-03-27 09:21:33,632 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-166
+2026-03-27 09:21:33,633 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-166
+2026-03-27 09:21:33,633 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-162
+2026-03-27 09:21:33,633 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-162
+2026-03-27 09:21:33,655 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-160
+2026-03-27 09:21:33,656 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-160
+2026-03-27 09:21:33,659 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-226
+2026-03-27 09:21:33,761 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-227
+2026-03-27 09:21:33,859 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-228
+2026-03-27 09:21:33,962 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-229
+2026-03-27 09:21:34,060 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-230
+2026-03-27 09:21:34,066 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-167
+2026-03-27 09:21:34,066 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-167
+2026-03-27 09:21:34,158 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-231
+2026-03-27 09:21:34,257 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-232
+2026-03-27 09:21:34,361 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-233
+2026-03-27 09:21:34,398 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-165
+2026-03-27 09:21:34,399 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-165
+2026-03-27 09:21:34,461 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-234
+2026-03-27 09:21:34,546 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-164
+2026-03-27 09:21:34,546 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-164
+2026-03-27 09:21:34,553 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-168
+2026-03-27 09:21:34,553 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-168
+2026-03-27 09:21:34,558 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-235
+2026-03-27 09:21:34,659 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-236
+2026-03-27 09:21:34,673 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-173
+2026-03-27 09:21:34,673 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-173
+2026-03-27 09:21:34,761 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-237
+2026-03-27 09:21:34,857 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-238
+2026-03-27 09:21:34,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-239
+2026-03-27 09:21:35,020 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-172
+2026-03-27 09:21:35,020 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-172
+2026-03-27 09:21:35,052 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-171
+2026-03-27 09:21:35,052 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-171
+2026-03-27 09:21:35,056 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-240
+2026-03-27 09:21:35,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-241
+2026-03-27 09:21:35,259 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-242
+2026-03-27 09:21:35,310 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-170
+2026-03-27 09:21:35,310 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-170
+2026-03-27 09:21:35,358 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-176
+2026-03-27 09:21:35,358 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-176
+2026-03-27 09:21:35,358 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-243
+2026-03-27 09:21:35,429 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-178
+2026-03-27 09:21:35,429 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-178
+2026-03-27 09:21:35,457 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-244
+2026-03-27 09:21:35,558 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-169
+2026-03-27 09:21:35,558 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-169
+2026-03-27 09:21:35,596 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-245
+2026-03-27 09:21:35,640 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-174
+2026-03-27 09:21:35,640 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-174
+2026-03-27 09:21:35,660 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-246
+2026-03-27 09:21:35,761 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-247
+2026-03-27 09:21:35,861 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-248
+2026-03-27 09:21:35,895 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-175
+2026-03-27 09:21:35,895 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-175
+2026-03-27 09:21:35,903 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-181
+2026-03-27 09:21:35,903 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-181
+2026-03-27 09:21:35,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-249
+2026-03-27 09:21:35,981 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-182
+2026-03-27 09:21:35,981 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-182
+2026-03-27 09:21:36,050 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-177
+2026-03-27 09:21:36,050 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-177
+2026-03-27 09:21:36,100 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-250
+2026-03-27 09:21:36,162 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-251
+2026-03-27 09:21:36,191 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-185
+2026-03-27 09:21:36,191 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-185
+2026-03-27 09:21:36,258 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-252
+2026-03-27 09:21:36,361 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-253
+2026-03-27 09:21:36,461 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-254
+2026-03-27 09:21:36,597 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-255
+2026-03-27 09:21:36,758 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-179
+2026-03-27 09:21:36,759 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-179
+2026-03-27 09:21:36,759 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-257
+2026-03-27 09:21:36,781 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-256
+2026-03-27 09:21:36,864 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-258
+2026-03-27 09:21:36,936 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-184
+2026-03-27 09:21:36,936 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-184
+2026-03-27 09:21:36,954 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-180
+2026-03-27 09:21:36,954 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-180
+2026-03-27 09:21:36,957 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-259
+2026-03-27 09:21:37,060 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-260
+2026-03-27 09:21:37,128 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-183
+2026-03-27 09:21:37,128 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-183
+2026-03-27 09:21:37,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-261
+2026-03-27 09:21:37,256 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-262
+2026-03-27 09:21:37,361 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-263
+2026-03-27 09:21:37,407 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-186
+2026-03-27 09:21:37,407 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-186
+2026-03-27 09:21:37,457 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-264
+2026-03-27 09:21:37,477 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-190
+2026-03-27 09:21:37,478 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-190
+2026-03-27 09:21:37,540 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-197
+2026-03-27 09:21:37,540 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-197
+2026-03-27 09:21:37,557 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-265
+2026-03-27 09:21:37,615 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-193
+2026-03-27 09:21:37,615 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-193
+2026-03-27 09:21:37,638 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-188
+2026-03-27 09:21:37,638 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-188
+2026-03-27 09:21:37,648 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-189
+2026-03-27 09:21:37,648 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-189
+2026-03-27 09:21:37,653 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-195
+2026-03-27 09:21:37,653 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-195
+2026-03-27 09:21:37,658 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-266
+2026-03-27 09:21:37,664 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-191
+2026-03-27 09:21:37,665 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-191
+2026-03-27 09:21:37,672 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-196
+2026-03-27 09:21:37,672 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-196
+2026-03-27 09:21:37,759 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-267
+2026-03-27 09:21:37,785 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-187
+2026-03-27 09:21:37,785 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-187
+2026-03-27 09:21:37,861 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-268
+2026-03-27 09:21:37,956 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-269
+2026-03-27 09:21:38,016 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-200
+2026-03-27 09:21:38,016 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-200
+2026-03-27 09:21:38,029 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-194
+2026-03-27 09:21:38,029 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-194
+2026-03-27 09:21:38,036 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-199
+2026-03-27 09:21:38,036 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-199
+2026-03-27 09:21:38,061 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-270
+2026-03-27 09:21:38,159 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-271
+2026-03-27 09:21:38,259 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-272
+2026-03-27 09:21:38,360 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-273
+2026-03-27 09:21:38,362 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-192
+2026-03-27 09:21:38,362 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-192
+2026-03-27 09:21:38,458 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-274
+2026-03-27 09:21:38,549 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-201
+2026-03-27 09:21:38,549 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-201
+2026-03-27 09:21:38,562 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-275
+2026-03-27 09:21:38,662 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-276
+2026-03-27 09:21:38,698 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-206
+2026-03-27 09:21:38,698 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-206
+2026-03-27 09:21:38,762 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-277
+2026-03-27 09:21:38,827 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-202
+2026-03-27 09:21:38,828 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-202
+2026-03-27 09:21:38,861 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-278
+2026-03-27 09:21:38,954 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-204
+2026-03-27 09:21:38,954 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-204
+2026-03-27 09:21:38,961 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-279
+2026-03-27 09:21:39,059 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-280
+2026-03-27 09:21:39,063 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-205
+2026-03-27 09:21:39,063 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-205
+2026-03-27 09:21:39,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-281
+2026-03-27 09:21:39,195 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-203
+2026-03-27 09:21:39,195 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-203
+2026-03-27 09:21:39,261 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-282
+2026-03-27 09:21:39,319 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-208
+2026-03-27 09:21:39,320 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-208
+2026-03-27 09:21:39,345 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-198
+2026-03-27 09:21:39,345 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-198
+2026-03-27 09:21:39,362 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-283
+2026-03-27 09:21:39,462 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-284
+2026-03-27 09:21:39,557 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-285
+2026-03-27 09:21:39,594 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-207
+2026-03-27 09:21:39,594 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-207
+2026-03-27 09:21:39,599 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-210
+2026-03-27 09:21:39,599 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-210
+2026-03-27 09:21:39,658 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-211
+2026-03-27 09:21:39,658 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-211
+2026-03-27 09:21:39,659 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-286
+2026-03-27 09:21:39,757 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-287
+2026-03-27 09:21:39,861 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-288
+2026-03-27 09:21:39,958 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-289
+2026-03-27 09:21:40,060 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-290
+2026-03-27 09:21:40,104 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-209
+2026-03-27 09:21:40,105 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-209
+2026-03-27 09:21:40,161 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-291
+2026-03-27 09:21:40,178 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-212
+2026-03-27 09:21:40,178 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-212
+2026-03-27 09:21:40,262 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-292
+2026-03-27 09:21:40,307 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-213
+2026-03-27 09:21:40,307 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-213
+2026-03-27 09:21:40,320 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-217
+2026-03-27 09:21:40,320 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-217
+2026-03-27 09:21:40,357 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-293
+2026-03-27 09:21:40,461 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-294
+2026-03-27 09:21:40,469 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-218
+2026-03-27 09:21:40,469 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-218
+2026-03-27 09:21:40,556 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-295
+2026-03-27 09:21:40,576 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-216
+2026-03-27 09:21:40,576 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-216
+2026-03-27 09:21:40,661 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-296
+2026-03-27 09:21:40,679 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-222
+2026-03-27 09:21:40,679 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-222
+2026-03-27 09:21:40,682 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-214
+2026-03-27 09:21:40,682 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-214
+2026-03-27 09:21:40,761 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-297
+2026-03-27 09:21:40,837 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-226
+2026-03-27 09:21:40,837 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-226
+2026-03-27 09:21:40,873 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-298
+2026-03-27 09:21:40,895 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-223
+2026-03-27 09:21:40,896 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-223
+2026-03-27 09:21:40,960 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-299
+2026-03-27 09:21:40,970 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-215
+2026-03-27 09:21:40,970 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-215
+2026-03-27 09:21:41,001 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-221
+2026-03-27 09:21:41,001 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-221
+2026-03-27 09:21:41,062 INFO o.a.j.t.JMeterThread: Thread started: Course Read Heavy Load 1-300
+2026-03-27 09:21:41,149 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-219
+2026-03-27 09:21:41,150 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-219
+2026-03-27 09:21:41,486 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-236
+2026-03-27 09:21:41,486 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-236
+2026-03-27 09:21:41,819 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-220
+2026-03-27 09:21:41,819 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-220
+2026-03-27 09:21:41,856 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-227
+2026-03-27 09:21:41,856 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-227
+2026-03-27 09:21:41,858 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-224
+2026-03-27 09:21:41,858 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-224
+2026-03-27 09:21:42,051 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-228
+2026-03-27 09:21:42,052 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-228
+2026-03-27 09:21:42,055 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-225
+2026-03-27 09:21:42,055 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-225
+2026-03-27 09:21:42,417 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-232
+2026-03-27 09:21:42,417 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-232
+2026-03-27 09:21:42,442 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-230
+2026-03-27 09:21:42,442 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-230
+2026-03-27 09:21:42,685 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-233
+2026-03-27 09:21:42,685 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-233
+2026-03-27 09:21:42,713 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-229
+2026-03-27 09:21:42,713 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-229
+2026-03-27 09:21:42,714 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-231
+2026-03-27 09:21:42,714 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-231
+2026-03-27 09:21:42,721 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-235
+2026-03-27 09:21:42,721 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-235
+2026-03-27 09:21:42,730 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-241
+2026-03-27 09:21:42,731 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-241
+2026-03-27 09:21:42,886 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-239
+2026-03-27 09:21:42,886 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-239
+2026-03-27 09:21:42,943 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-240
+2026-03-27 09:21:42,943 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-240
+2026-03-27 09:21:42,950 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-238
+2026-03-27 09:21:42,950 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-238
+2026-03-27 09:21:43,088 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-246
+2026-03-27 09:21:43,088 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-246
+2026-03-27 09:21:43,190 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-234
+2026-03-27 09:21:43,190 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-234
+2026-03-27 09:21:43,286 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-243
+2026-03-27 09:21:43,286 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-243
+2026-03-27 09:21:43,347 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-237
+2026-03-27 09:21:43,348 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-237
+2026-03-27 09:21:43,571 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-249
+2026-03-27 09:21:43,571 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-249
+2026-03-27 09:21:43,580 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-245
+2026-03-27 09:21:43,580 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-245
+2026-03-27 09:21:43,700 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-247
+2026-03-27 09:21:43,700 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-247
+2026-03-27 09:21:43,846 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-252
+2026-03-27 09:21:43,846 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-252
+2026-03-27 09:21:44,048 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-263
+2026-03-27 09:21:44,048 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-263
+2026-03-27 09:21:44,055 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-242
+2026-03-27 09:21:44,055 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-242
+2026-03-27 09:21:44,074 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-254
+2026-03-27 09:21:44,074 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-254
+2026-03-27 09:21:44,177 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-248
+2026-03-27 09:21:44,177 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-248
+2026-03-27 09:21:44,185 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-244
+2026-03-27 09:21:44,185 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-244
+2026-03-27 09:21:44,204 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-250
+2026-03-27 09:21:44,204 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-250
+2026-03-27 09:21:44,256 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-251
+2026-03-27 09:21:44,256 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-251
+2026-03-27 09:21:44,301 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-258
+2026-03-27 09:21:44,301 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-258
+2026-03-27 09:21:44,390 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-262
+2026-03-27 09:21:44,391 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-262
+2026-03-27 09:21:44,432 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-253
+2026-03-27 09:21:44,432 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-253
+2026-03-27 09:21:44,531 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-261
+2026-03-27 09:21:44,531 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-261
+2026-03-27 09:21:44,550 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-267
+2026-03-27 09:21:44,550 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-267
+2026-03-27 09:21:44,553 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-257
+2026-03-27 09:21:44,553 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-257
+2026-03-27 09:21:44,577 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-259
+2026-03-27 09:21:44,577 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-259
+2026-03-27 09:21:44,647 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-266
+2026-03-27 09:21:44,647 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-266
+2026-03-27 09:21:44,657 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-273
+2026-03-27 09:21:44,657 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-273
+2026-03-27 09:21:44,734 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-256
+2026-03-27 09:21:44,734 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-256
+2026-03-27 09:21:44,773 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-265
+2026-03-27 09:21:44,773 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-265
+2026-03-27 09:21:44,788 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-269
+2026-03-27 09:21:44,788 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-269
+2026-03-27 09:21:44,815 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-260
+2026-03-27 09:21:44,815 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-260
+2026-03-27 09:21:44,841 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-255
+2026-03-27 09:21:44,841 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-255
+2026-03-27 09:21:44,966 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-281
+2026-03-27 09:21:44,966 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-281
+2026-03-27 09:21:45,017 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-282
+2026-03-27 09:21:45,017 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-282
+2026-03-27 09:21:45,037 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-268
+2026-03-27 09:21:45,037 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-289
+2026-03-27 09:21:45,037 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-268
+2026-03-27 09:21:45,038 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-289
+2026-03-27 09:21:45,045 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-270
+2026-03-27 09:21:45,045 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-270
+2026-03-27 09:21:45,170 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-274
+2026-03-27 09:21:45,170 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-274
+2026-03-27 09:21:45,179 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-272
+2026-03-27 09:21:45,180 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-272
+2026-03-27 09:21:45,192 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-277
+2026-03-27 09:21:45,192 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-277
+2026-03-27 09:21:45,300 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-283
+2026-03-27 09:21:45,301 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-283
+2026-03-27 09:21:45,305 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-271
+2026-03-27 09:21:45,305 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-271
+2026-03-27 09:21:45,320 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-264
+2026-03-27 09:21:45,320 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-264
+2026-03-27 09:21:45,367 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-286
+2026-03-27 09:21:45,367 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-286
+2026-03-27 09:21:45,384 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-275
+2026-03-27 09:21:45,384 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-275
+2026-03-27 09:21:45,414 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-276
+2026-03-27 09:21:45,414 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-276
+2026-03-27 09:21:45,427 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-293
+2026-03-27 09:21:45,427 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-293
+2026-03-27 09:21:45,459 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-284
+2026-03-27 09:21:45,459 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-284
+2026-03-27 09:21:45,502 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-279
+2026-03-27 09:21:45,502 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-279
+2026-03-27 09:21:45,520 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-294
+2026-03-27 09:21:45,520 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-294
+2026-03-27 09:21:45,522 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-278
+2026-03-27 09:21:45,522 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-278
+2026-03-27 09:21:45,530 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-300
+2026-03-27 09:21:45,530 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-300
+2026-03-27 09:21:45,534 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-292
+2026-03-27 09:21:45,534 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-292
+2026-03-27 09:21:45,560 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-297
+2026-03-27 09:21:45,560 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-297
+2026-03-27 09:21:45,562 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-290
+2026-03-27 09:21:45,562 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-290
+2026-03-27 09:21:45,565 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-287
+2026-03-27 09:21:45,565 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-287
+2026-03-27 09:21:45,584 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-280
+2026-03-27 09:21:45,584 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-280
+2026-03-27 09:21:45,599 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-285
+2026-03-27 09:21:45,599 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-285
+2026-03-27 09:21:45,599 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-288
+2026-03-27 09:21:45,599 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-288
+2026-03-27 09:21:45,651 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-298
+2026-03-27 09:21:45,651 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-298
+2026-03-27 09:21:45,669 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-291
+2026-03-27 09:21:45,669 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-291
+2026-03-27 09:21:45,675 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-296
+2026-03-27 09:21:45,675 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-296
+2026-03-27 09:21:45,699 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-299
+2026-03-27 09:21:45,699 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-299
+2026-03-27 09:21:45,699 INFO o.a.j.t.JMeterThread: Thread is done: Course Read Heavy Load 1-295
+2026-03-27 09:21:45,699 INFO o.a.j.t.JMeterThread: Thread finished: Course Read Heavy Load 1-295
+2026-03-27 09:21:45,700 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-03-27 09:21:45,701 INFO o.a.j.r.Summariser: summary +   2841 in 00:00:16 =  181.0/s Avg:   361 Min:    23 Max:   917 Err:     0 (0.00%) Active: 0 Started: 300 Finished: 300
+2026-03-27 09:21:45,701 INFO o.a.j.r.Summariser: summary =   6000 in 00:00:35 =  173.6/s Avg:   283 Min:    21 Max:   917 Err:     0 (0.00%)
+2026-03-27 09:21:45,701 INFO o.a.j.JMeter: Generating Dashboard
+2026-03-27 09:21:45,702 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-03-27 09:21:45,720 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-03-27 09:21:45,905 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-03-27 09:21:45,905 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-03-27 09:21:45,906 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-03-27 09:21:45,906 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-03-27 09:21:45,912 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-03-27 09:21:45,913 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-03-27 09:21:45,913 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-03-27 09:21:45,913 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-03-27 09:21:45,987 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-03-27 09:21:45,988 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-03-27 09:21:45,988 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-03-27 09:21:45,988 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-03-27 09:21:46,050 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-03-27 09:21:46,051 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 42000 samples
+2026-03-27 09:21:46,051 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-03-27 09:21:46,051 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-03-27 09:21:46,051 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-03-27 09:21:46,051 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-03-27 09:21:46,051 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-03-27 09:21:46,051 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-03-27 09:21:46,053 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-03-27 09:21:46,054 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-03-27 09:21:46,054 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-03-27 09:21:46,054 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-03-27 09:21:46,054 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 90000 samples
+2026-03-27 09:21:46,054 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 18000 samples
+2026-03-27 09:21:46,055 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 6000 samples
+2026-03-27 09:21:46,055 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 6000 samples produced in 317ms on channel 0
+2026-03-27 09:21:46,055 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-03-27 09:21:46,108 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-03-27 09:21:46,108 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-03-27 09:21:46,108 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-03-27 09:21:46,108 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-03-27 09:21:46,109 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /Users/koohyunmo/Developer/course-registration/performance/results/redis-report/statistics.json
+2026-03-27 09:21:46,135 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-03-27 09:21:46,137 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /Users/koohyunmo/Developer/course-registration/performance/results/redis-report
+2026-03-27 09:21:46,201 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /Users/koohyunmo/Developer/course-registration/performance/results/redis-report, creating folder structure
+2026-03-27 09:21:46,203 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/report-template' to '/Users/koohyunmo/Developer/course-registration/performance/results/redis-report', got message: /Users/koohyunmo/Developer/course-registration/performance/results/redis-report, found non empty folder with following content [/Users/koohyunmo/Developer/course-registration/performance/results/redis-report/statistics.json], will be ignored
+2026-03-27 09:21:46,391 INFO o.a.j.JMeter: Dashboard generated

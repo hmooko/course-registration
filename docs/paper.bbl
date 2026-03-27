@@ -1,0 +1,33 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Apache Software Foundation}(2026)]{jmeter-manual}
+{Apache Software Foundation}.
+\newblock Apache jmeter user's manual.
+\newblock \url{https://jmeter.apache.org/usermanual/index.html}, 2026.
+\newblock Accessed: 2026-03-27.
+
+\bibitem[{Ben Manes}(2025)]{caffeine-eviction}
+{Ben Manes}.
+\newblock Eviction · ben-manes/caffeine wiki.
+\newblock \url{https://github.com/ben-manes/caffeine/wiki/Eviction}, 2025.
+\newblock Accessed: 2026-03-27.
+
+\bibitem[{Redis}(2026)]{redis-caching}
+{Redis}.
+\newblock Caching | redis.
+\newblock \url{https://redis.io/solutions/caching/}, 2026.
+\newblock Accessed: 2026-03-27.
+
+\bibitem[Wang(1999)]{wang1999survey}
+Jia Wang.
+\newblock A survey of web caching schemes for the internet.
+\newblock \emph{ACM SIGCOMM Computer Communication Review}, 29\penalty0
+  (5):\penalty0 36--46, 1999.
+\newblock \doi{10.1145/505696.505701}.
+
+\end{thebibliography}
