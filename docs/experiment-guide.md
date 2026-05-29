@@ -7,6 +7,7 @@
 - No Cache: `/api/v1/courses/no-cache`
 - Caffeine: `/api/v1/courses/caffeine`
 - Redis: `/api/v1/courses/redis`
+- Redis 오버헤드 분해: `/api/v1/courses/cache-overhead`
 
 ## 2. 비교 대상과 가설
 
@@ -163,8 +164,25 @@ jmeter -n \
 - Redis는 네트워크 비용이 있지만 확장성과 공유 캐시에 강점이 있다.
 - No Cache는 구현이 단순하지만 읽기 폭주 시 DB 병목을 직접 유발한다.
 
-## 12. 다음 권장 작업
+## 12. Redis 오버헤드 분해 실험
 
-- JMeter 결과를 자동으로 비교 정리하는 스크립트 추가
+최종 논문에서는 Redis가 Caffeine보다 느린 원인을 설명하기 위해 내부 처리 시간을 100회 반복 측정한다.
+
+```bash
+curl http://localhost:8080/api/v1/courses/cache-overhead
+```
+
+측정 항목:
+
+- Caffeine 조회 평균 시간
+- Redis GET 왕복 평균 시간
+- Redis 역직렬화 평균 시간
+- 기타 애플리케이션 처리 평균 시간
+- 각 전략의 전체 내부 처리 평균 시간
+
+이 API는 먼저 Caffeine과 Redis 캐시를 워밍업한 뒤 동일한 `allCourses` 키를 기준으로 측정한다.
+
+## 13. 다음 권장 작업
+
 - 캐시 무효화 API 또는 수강신청 발생 시 캐시 삭제 로직 추가
 - 논문 본문용 실험 환경 표와 결과 표 초안 작성

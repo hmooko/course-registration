@@ -1,6 +1,8 @@
 package com.example.courseregistration.course.controller;
 
 import com.example.courseregistration.course.dto.CourseResponseDto;
+import com.example.courseregistration.course.dto.CacheOverheadResponseDto;
+import com.example.courseregistration.course.service.CourseCacheOverheadService;
 import com.example.courseregistration.course.service.CourseService;
 import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,9 +14,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class CourseController {
 
     private final CourseService courseService;
+    private final CourseCacheOverheadService courseCacheOverheadService;
 
-    public CourseController(CourseService courseService) {
+    public CourseController(
+            CourseService courseService,
+            CourseCacheOverheadService courseCacheOverheadService
+    ) {
         this.courseService = courseService;
+        this.courseCacheOverheadService = courseCacheOverheadService;
     }
 
     @GetMapping("/no-cache")
@@ -30,5 +37,10 @@ public class CourseController {
     @GetMapping("/redis")
     public List<CourseResponseDto> getCoursesWithRedisCache() {
         return courseService.getAllCoursesWithRedisCache();
+    }
+
+    @GetMapping("/cache-overhead")
+    public CacheOverheadResponseDto measureCacheOverhead() {
+        return courseCacheOverheadService.measureDefault();
     }
 }
